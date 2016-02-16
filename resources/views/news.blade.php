@@ -10,7 +10,7 @@
         <img src="data:{{$news->previewtype}};base64,{{base64_encode($news->preview)}}"
              class="news-main-image float-left">
         <p class="news-font news" align="justify">
-            {{$news->content}}
+            {!! nl2br($news->content) !!}
         </p>
         <h5 class="news-font align-right">Scritto da <i><strong>{{$user->name}}</strong></i></h5>
 
