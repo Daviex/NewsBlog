@@ -6,6 +6,7 @@
         <h2>Aggiungi una news</h2>
         <br>
 
+        <!-- add News Form -->
         <form class="form-horizontal" role="form" method="post" action="{{URL::to('addNews')}}" enctype="multipart/form-data">
             <div class="form-group">
                 <label class="control-label col-sm-2">Titolo</label>
@@ -69,6 +70,7 @@
                 </div>
             </div>
         </form>
+
     </div>
 
 @endsection

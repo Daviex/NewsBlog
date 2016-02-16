@@ -3,7 +3,10 @@
 @section('content')
 
     <div class="container news">
+
         <h2>{{ucfirst($category)}}</h2>
+
+        <!-- Category news -->
         @for ($i = 0; $i < count($news); $i++)
 
             @if($i % 3 == 0)
@@ -25,6 +28,7 @@
             @endif
 
         @endfor
+
     </div>
 
 @endsection

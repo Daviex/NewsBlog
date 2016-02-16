@@ -9,7 +9,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .feature {
     background: #787854 linear-gradient(to top, #787854, #dfdfd2);
-/ / background: yellowgreen linear-gradient(to bottom, greenyellow, olivedrab);
     color: black;
 }
 

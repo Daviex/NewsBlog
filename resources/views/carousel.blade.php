@@ -1,8 +1,10 @@
 <div class="jumbotron feature">
     <div class="container">
 
+        <!-- Home carousel-->
         <div id="feature-carousel" class="carousel slide" data-ride="carousel">
 
+            <!-- Carousel indicators -->
             <ol class="carousel-indicators">
 
                 @for($i = 0 ; $i<count($carousel_news); $i++)
@@ -13,6 +15,7 @@
 
             </ol>
 
+            <!-- Carousel images -->
             <div class="carousel-inner" role="listbox">
 
                 @for($i=0 ; $i<count($carousel_news); $i++)
@@ -30,6 +33,8 @@
                 @endfor
 
             </div>
+
+            <!-- Carousel controls -->
             <a class="left carousel-control" href="#feature-carousel" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span class="sr-only">Precedente</span>

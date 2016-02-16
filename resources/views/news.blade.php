@@ -4,6 +4,7 @@
 
     <div class="container news">
 
+        <!-- News data -->
         <h2 class="news-font">{{$news->title}}</h2>
         <h4 class="subtitle news-font">{{$news->subtitle}}</h4>
         <img src="data:{{$news->previewtype}};base64,{{base64_encode($news->preview)}}"
@@ -15,10 +16,12 @@
 
         <br><br>
 
+        <!-- News photos (carousel)-->
         @if(count($photos)>0)
 
             <div id="news-carousel" class="carousel slide news-carousel center-block" data-ride="carousel">
 
+                <!-- Carousel indicatos -->
                 <ol class="carousel-indicators">
                     @for($i = 0 ; $i<count($photos); $i++)
 
@@ -28,7 +31,7 @@
                     @endfor
                 </ol>
 
-
+                <!-- Carousel photos -->
                 <div class="carousel-inner" role="listbox">
                     @endif
 
@@ -46,7 +49,7 @@
                             </div>
 
 
-                            <!-- Left and right controls -->
+                            <!-- Carousel controls -->
                             <a class="left carousel-control" href="#news-carousel" role="button" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                 <span class="sr-only">Precedente</span>
@@ -60,6 +63,8 @@
                 @endif
 
                 <br><br><br>
+
+                <!-- Votes -->
                 <h3>Valutazione media
                     <strong>{{$news->votes_count == 0 ? '0' : round(($news->votes_sum)/($news->votes_count),1)}} </strong>
                     su <strong>5 </strong>({{$news->votes_count}} valutazioni)</h3>
@@ -80,6 +85,7 @@
 
                 <br><br>
 
+                <!-- Comments -->
                 <h3><strong>I commenti dei lettori</strong></h3>
                 <br>
 
@@ -109,10 +115,11 @@
                     <br>
 
                     <div>
+
                         <h4><strong>Aggiungi un commento</strong></h4>
                         <br>
 
-
+                        <!-- Add comments form -->
                         <form class="form-horizontal" role="form" method="post" action="{{ URL::to('addComment') }}">
 
                             <input type="hidden" name="idNews" value="{{ $news->id }}">

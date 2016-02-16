@@ -1,7 +1,7 @@
-<!-- Navigation -->
+<!-- Navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
-        <!-- Logo and responsive toggle -->
+        <!-- Navbar header -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -15,7 +15,7 @@
             </a>
         </div>
 
-        <!-- Navbar links -->
+        <!-- Navbar left links -->
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
 
@@ -65,6 +65,7 @@
                 <button type="submit" class="btn btn-default">Cerca</button>
             </form>
 
+            <!-- Navbar right links -->
             <ul class="nav navbar-nav navbar-right">
 
                 @if(Auth::check())

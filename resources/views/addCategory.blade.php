@@ -6,6 +6,7 @@
         <h2>Aggiungi una sezione</h2>
         <br>
 
+        <!-- Add category Form -->
         <form class="form-horizontal" role="form" method="post" action="{{URL::to('addCategory')}}">
             <div class="form-group">
                 <label class="control-label col-sm-2">Titolo</label>
@@ -20,6 +21,7 @@
                 </div>
             </div>
         </form>
+
     </div>
 
 @endsection

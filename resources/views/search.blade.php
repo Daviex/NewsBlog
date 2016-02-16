@@ -5,6 +5,7 @@
     <div class="container news">
         <h2>Risultati della ricerca</h2>
 
+        <!-- Search results -->
         @for ($i = 0; $i < count($results); $i++)
 
             @if($i % 3 == 0)
