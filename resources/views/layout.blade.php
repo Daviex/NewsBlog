@@ -16,7 +16,6 @@
     <script src="{{ asset('js/jquery-1.11.3.min.js') }}" defer></script>
     <script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
     <script src="{{ asset('js/ie10-viewport-bug-workaround.js') }}" defer></script>
-    <script src="{{ asset('js/holder.min.js') }}" defer></script>
 </head>
 
 
